@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sample Registration Form </title>
+    </head>
+    <body>
+        <h2> Student Registration</h2>
+    <form action="#" method="post">
+        <p>First Name: <input type="text" Name="fname" maxlength="50"></p>
+        <p>Last Name: <input type="text" name="iname" maxlength="50"></p>
+        <p> <input type="submit" value="Register Now"></p>
+    </form>
+    <p><i>This is a basic Form.</i></p>
+
+         <FORM ACTION="submit_form.php" METHOD="POST">
+            Full Name:  <INPUT TYPE="TEXT" NAME="fullname" SIZE="30"
+            MAXLENGTH="80"><BR>
+
+                City:  <INPUT TYPE="TEXT" NAME="city" 
+                VALUE="Kampala" SIZE="20"><BR>
+                    
+                    Phone(UG): <INPUT TYPE="TEXT" NAME="phone" SIZE="16"
+                    MAXLENGTH="14"
+                    PLACEHOLDER="+256 7XX XXX XXX"><BR>
+
+                        Student No: <INPUT TYPE="TEXT" NAME="stud_id" SIZE="12"
+                        MAXLENGTH="10">
+                  <P> Password:
+                    <INPUT TYPE="PASSWORD" NAME="password" SIZE="15"
+                    MAXLENGTH="30"
+                    VALUE="">
+                  </P>
+               
+                  <P><B>Select your enrolled courses:</B></P>
+
+                  Web Technology:
+                  <INPUT TYPE="CHECKBOX" NAME="course" VALUE="web_tech"
+                  CHECKED><BR>
+                    Certificate:<INPUT TYPE="RADIO" NAME="level" VALUE="cert"><BR>
+                        Diploma:<INPUT TYPE="RADIO" NAME="level" VALUE="dip" CHECKED><BR>
+
+                    Database Management:
+                    <INPUT TYPE="CHECKBOX" NAME="course" VALUE="dbms"><BR>
+                        Degree: <INPUT TYPE="RADIO" NAME="level" VALUE="deg"><BR>
+                            Masters: <INPUT TYPE="RADIO" NAME="level" VALUE="msc" CHECKED><BR>
+
+                        Software Engineering:
+                        <INPUT TYPE="CHECKBOX" NAME="course" VALUE="sc"><BR>
+                            
+                            Cloud Computing:
+                            <INPUT TYPE="CHECKBOX" NAME="course" VALUE="CLOUD"><br>
+
+                                <p><B> Mode of Study: </B></p>
+                                Day:   <INPUT TYPE="RADIO" NAME="mode" VALUE="day" CHECKED><BR>
+                                    Evening: <INPUT TYPE="RADIO" NAME="mode" VALUE="eve"><BR>
+                                        Weekend: <INPUT TYPE="RADIO" NAME="mode" VALUE="wkd"><BR><br>
+
+
+                    <FORM NAME="appForm" ACTION="äpply.php" METHOD="POST">
+                    Full Name: <INPUT TYPE="TEXT" NAME="fname" SIZE="30"><br>
+                        Date of Birth: <INPUT TYPE="TEXT" NAME="dob" SIZE="12"><br><br>
+                                            
+                           <!-- Button with an onclick JavaScript call-->
+                    <INPUT TYPE="BUTTON"
+                    NAME="previewBtn"
+                    VALUE="Preview My Application"
+                     onclick="previewApplication()">
+                      <INPUT TYPE="BUTTON"
+                      NAME="calcBtn"
+                    VALUE="Calculate Age"
+                      onclick="calculateAge(document.appForm.dob.value)">
+                    </FORM>
+
+                  <FORM ACTION="feedback.php" METHOD="POST">
+                    Name: <INPUT TYPE="TEXT" NAME="name" SIZE="30"><BR>
+                    Email: <INPUT TYPE="TEXT" NAME="email" SIZE="30"><BR>
+                        Comments: <TEXTAREA NAME="comments" ROWS="4" COLS="40"></TEXTAREA><BR>
+              Rating:
+              <INPUT TYPE="RADIO" NAME="rating" VALUE="5"> Excellent
+              <INPUT TYPE="RADIO" NAME="rating" VALUE="3"> Average
+              <INPUT TYPE="RADIO" NAME="rating" VALUE="1"> Poor<BR><BR>
+                <INPUT TYPE="SUBMIT" VALUE="Submit Feedback">
+                <INPUT TYPE="RESET" VALUE="Clear All Fields">                
+                </FORM>
+
+
+         </FORM>
+    </body>
+</html>

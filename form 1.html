@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ISBAT University - Student Registration </title>
+    </head>
+        <body>
+            <h2> ISBAT University Student Registration Form </h2>
+            <FORM NAME="regForm"
+            ACTION="register_student.php"
+             METHOD="POST" ENCTYPE="multipart/form-data">
+
+             <h3> Personal Information </h3>
+             First Name: <INPUT TYPE="TEXT" NAME="fname"
+             SIZE="20" MAXLENGTH="50" REQUIRED><BR>
+
+            Last Name: <INPUT TYPE="TEXT" NAME="lname"
+             SIZE="20" MAXLENGTH="50" REQUIRED><BR>
+
+                Date of Birth: <INPUT TYPE="TEXT" NAME="dob"
+             SIZE="12" PLACEHOLDER="DD/MM/YYYY"><BR>
+
+            NIN: <INPUT TYPE="TEXT" NAME="nin"
+             SIZE="16" MAXLENGTH="14"><BR>
+
+            Phone: <INPUT TYPE="TEXT" NAME="phone"
+             SIZE="16" MAXLENGTH="13" PLACEHOLDER="+256 7XX XXX"><BR>
+
+            Email: <INPUT TYPE="TEXT" NAME="email"
+             SIZE="30"><BR>
+
+            Create Password:<INPUT TYPE="PASSWORD" NAME="pwd"
+             SIZE="20" MAXLENGTH="30"><BR>
+
+            Confirm Password: <INPUT TYPE="PASSWORD" NAME="PWD2"
+             SIZE="20" MAXLENGTH="30"><BR>
+
+            <H3> Academic Information</H3>
+            Programme:
+            <SELECT NAME="programme" SIZE="1">
+                <OPTION VALUE="">-- Select Programme--
+                </OPTION>
+                <OPTION VALUE="bsc"> Bachelor of Computer Science </OPTION>
+                <OPTION VALUE="bit"> Bachelor of Information Technology </OPTION>
+                <OPTION VALUE="bai"> Bachelor of Artificial Intelligence </OPTION>
+                <OPTION VALUE="dit"> Diploma in Information Technology </OPTION>
+                
+            </SELECT><BR>
+
+            Year of Study: 
+            <INPUT TYPE="RADIO" NAME="year" VALUE="1">
+            Year 1
+            <INPUT TYPE="RADIO" NAME="year" VALUE="2" CHECKED>
+            Year 2
+            <INPUT TYPE="RADIO" NAME="year" VALUE="3">
+            Year 3
+            <INPUT TYPE="RADIO" NAME="year" VALUE="4">
+            Year 4<BR>
+
+            Mode of Study:
+            <INPUT TYPE="RADIO" NAME="mode" VALUE="day">
+            Day
+            <INPUT TYPE="RADIO" NAME="mode" VALUE="eve">
+            Evening
+            <INPUT TYPE="RADIO" NAME="mode" VALUE="wkd">
+            Weekend<BR>
+            
+            <h3> Attach Documents </h3>
+            O-Level Certificate (PDF):
+            <INPUT TYPE="FILE" NAME="olevel" ACCEPT=".pdf"><BR>
+            A-Level or Diploma Certificate (PDF):
+            <INPUT TYPE="FILE" NAME="Alevel" ACCEPT=".pdf"><BR>
+            Passport Photo(JPG/PNG):
+            <INPUT TYPE="FILE" NAME="PHOTO" ACCEPT="image/*"><BR>
+            
+                <!--Hidden tracking fields-->
+                <INPUT TYPE="HIDDEN" NAME="campus" VALUE="Kampala-Main"><BR>
+                <INPUT TYPE="HIDDEN" NAME="acad_year" VALUE="2025/2026">
+                <INPUT TYPE="SUBMIT" VALUE="Submit Registration"><BR>
+                <INPUT TYPE="RESET" VALUE="Clear Form">
+            </FORM>
+        </body>
+</html>
