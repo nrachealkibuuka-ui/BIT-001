@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ISBAT University | Student Registration </title>
+
+        <style>
+            body{
+                font-family: Arial, sans-serif; background-color: #f2f4f7;
+                margin: 0; padding: 0;
+            }
+
+            header{
+                background-color: rgb(138, 27, 27); color: white;
+                text-align: center; padding: 15px;
+            }
+
+            nav{
+                background-color: #531b1b; padding: 15px;
+                text-align: center;
+            }
+            nav a {
+                color: white; text-decoration: none;
+                margin: 15px;
+            }
+            main{
+                padding: 40px;
+            }
+            form{
+                max-width: 700px; margin: auto;
+                background-color: white; padding: 20px;
+                border-radius: 8px;
+            }
+            fieldset{
+                padding: 20px; margin-bottom: 20px;
+                border: 1px solid #777;
+                border-radius: 5px;
+            }
+            legend{
+                font-weight: bold; color: #531b1b;
+            }
+            input, select {
+                margin-top: 8px; margin-bottom: 8px;
+                padding: 8px;
+            }
+            button{
+                padding: 10px 20px; cursor: pointer; color: #531b1b;
+                margin: 5px;
+            }
+            footer{
+                background-color: rgb(138, 27, 27); color: white;
+                text-align: center; padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+      <header>
+        <h1> ISBAT UNIVERSITY</h1>
+        <P>Online Student Registration Portal</P>
+      </header>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#programmes">PROGRAMMES</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <FORM>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">FULL NAME:</label>
+             <input type="text" id="fullname" name="fullname" required>
+
+             <br><br>
+
+             <label for="studentid">STUDENT ID:</label>
+             <input type="text" id="studentid" name="studentid"
+             pattern="ISBAT[0-9]{4}"
+             placeholder="ISBAT2026" required>
+
+             <br><br>
+
+             <label for="email">EMAIL ADDRESS:</label>
+             <INPUT type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="phone">PHONE NUMBER:</label>
+                <input type="tel" id="phone" name="phone"
+                pattern="07[0-9]{8}"
+                placeholder="07XXXXXXXX" required>
+
+                <BR><BR>
+
+                    <label>GENDER:</label>
+
+                    <input type="radio" id="male" name="gender"
+                    value="Male" required>
+                    <label for="male">MALE</label>
+
+                    <input type="radio" id="female" name="gender"
+                    value="Female" required>
+                    <label for="female">FEMALE</label>
+
+                    <br><br>
+
+                    <label for="nationality">NATIONALITY:</label>
+
+                    <select id="nationality" name="nationality" required>
+                        <option value="">Select NATIONALITY</option>
+                        <option value="Uganda">UGANDA</option>
+                        <option value="Kenya">KENYA</option>
+                        <option value="Tanzania">TANZANIA</option>
+                        <option value="Rwanda">RWANDA</option>
+                        <option value="South Sudan">SOUTH SUDAN</option>
+                    </select>
+
+                    <BR><BR>
+                        <label for="dob">DATE OF BIRTH:</label>
+                        <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset id="programmes">
+
+            <legend> PROGRAMMES DETAILS </legend>
+
+            <label for="programme">PROGRAMMES OF STUDY:</label>
+            <select id="programme" name="programme" required>
+                <option value="">Select Programme</option>
+                <option value="BIT">
+                    BACHELOR OF INFORMATION TECHNOLOGY
+                </option>
+                <option value="BCS">
+                    BACHELOR OF COMPUTER SCIENCE
+                </option>
+                <option value="BAI">
+                    BACHELOR OF ARTIFICIAL INTELLIENCE
+                </option>
+                <option value="BBA">
+                    BACHELOR OF BUSINESS ADMINISTRATION
+                </option>
+                <option value="BML">
+                    BACHELOR OF MACHINE LEARNING
+                </option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Course Units - First Semester</legend>
+            <input type="checkbox" id="html"
+            name="units" value="HTML5" required>
+            <label for="html">HTML5 and Web Development</label>
+
+            <br>
+
+            <input type="checkbox" id="java"
+            name="units" value="JAVA" required>
+            <label for="java">Java Programming</label>
+
+            <br>
+
+            <input type="checkbox" id="database"
+            name="units" value="DATABASE" required>
+            <label for="database">Database Management</label>
+
+            <br>
+
+            <input type="checkbox" id="networking"
+            name="units" value="NETWORKING" required>
+            <label for="networking">Computer Networks</label>
+            
+            <br>
+
+            <input type="checkbox" id="linux"
+            name="units" value="LINUX" required>
+            <label for="linux">Linux Operating Systems</label>
+        </fieldset>
+
+        <button type="submit">SUBMIT REGISTRATION</button>
+         <button type="reset">RESET FORM</button>
+      </FORM>
+
+      <footer id="contact">
+        <p>Contact ISBAT UNIVERSITY for more Information. </p>
+
+        <p>
+            Copyright &copy; 2026 ISBAT UNIVERSITY.
+            Registration Number: YOUR REGISTRATION NUMBER
+        </p>
+      </footer>
+    </body>
+</html>
+
+
+

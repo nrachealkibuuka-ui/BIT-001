@@ -1,0 +1,499 @@
+<!-- INDEX.HTML-->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <LINK REl="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Welcome to ISBAT </h1>
+        </header>
+        <DIV CLASS="container">
+         <h2> About Us </h2>
+         <p> Empowering Lives... </p>
+        </DIV>
+    </body>
+ </html>
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ISBAT University | Student Registration</title>
+
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #222;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Main section */
+        main {
+            padding: 25px 15px;
+        }
+
+        /* Registration form */
+        form {
+            background-color: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* Fieldset styling */
+        fieldset {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #003366;
+            border-radius: 5px;
+        }
+
+        legend {
+            color: #003366;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Input fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        /* Radio buttons and checkboxes */
+        .option {
+            margin: 10px 0;
+        }
+
+        .option label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        /* Buttons */
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #003366;
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #777;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- University Header -->
+    <header id="home">
+        <h1>ISBAT University</h1>
+        <p>Online Student Registration Portal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <h2 style="text-align:center;">New Student Registration Form</h2>
+
+        <p style="text-align:center;">
+            Please complete all the required fields to register
+            for your first semester.
+        </p>
+
+        <form action="#" method="post">
+
+            <!-- PERSONAL DETAILS -->
+            <fieldset>
+
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       placeholder="Enter your full name"
+                       required>
+
+                <label for="studentid">Student ID:</label>
+                <input type="text"
+                       id="studentid"
+                       name="studentid"
+                       placeholder="ISBAT/2026/001"
+                       pattern="ISBAT/[0-9]{4}/[0-9]{3}"
+                       title="Use the format ISBAT/2026/001"
+                       required>
+
+                <label for="email">Email Address:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="example@gmail.com"
+                       required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="07XXXXXXXX"
+                       pattern="07[0-9]{8}"
+                       title="Enter a 10-digit number beginning with 07"
+                       required>
+
+                <label>Gender:</label>
+
+                <div class="option">
+                    <input type="radio"
+                           id="male"
+                           name="gender"
+                           value="Male"
+                           required>
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio"
+                           id="female"
+                           name="gender"
+                           value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="option">
+                    <input type="radio"
+                           id="other"
+                           name="gender"
+                           value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="nationality">Nationality:</label>
+
+                <select id="nationality"
+                        name="nationality"
+                        required>
+
+                    <option value="">-- Select Nationality --</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="South Sudan">South Sudan</option>
+
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       required>
+
+            </fieldset>
+
+            <!-- PROGRAMME DETAILS -->
+            <fieldset id="programmes">
+
+                <legend>Programme Details</legend>
+
+                <label for="programme">Choose Programme of Study:</label>
+
+                <select id="programme"
+                        name="programme"
+                        required>
+
+                    <option value="">-- Select Programme --</option>
+
+                    <option value="BIT">
+                        Bachelor of Information Technology
+                    </option>
+
+                    <option value="BCS">
+                        Bachelor of Computer Science
+                    </option>
+
+                    <option value="BBIT">
+                        Bachelor of Business Information Technology
+                    </option>
+
+                    <option value="BBA">
+                        Bachelor of Business Administration
+                    </option>
+
+                </select>
+
+            </fieldset>
+
+            <!-- COURSE UNITS -->
+            <fieldset>
+
+                <legend>Course Units – First Semester</legend>
+
+                <p>Select the course units you wish to register for:</p>
+
+                <div class="option">
+                    <input type="checkbox"
+                           id="programming"
+                           name="units"
+                           value="Introduction to Programming"
+                           required>
+                    <label for="programming">
+                        Introduction to Programming
+                    </label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox"
+                           id="web"
+                           name="units"
+                           value="Web Design and Development">
+                    <label for="web">
+                        Web Design and Development
+                    </label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox"
+                           id="database"
+                           name="units"
+                           value="Database Management Systems">
+                    <label for="database">
+                        Database Management Systems
+                    </label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox"
+                           id="mathematics"
+                           name="units"
+                           value="Discrete Mathematics">
+                    <label for="mathematics">
+                        Discrete Mathematics
+                    </label>
+                </div>
+
+                <div class="option">
+                    <input type="checkbox"
+                           id="computer"
+                           name="units"
+                           value="Computer Fundamentals">
+                    <label for="computer">
+                        Computer Fundamentals
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <!-- FORM BUTTONS -->
+            <button type="submit" class="submit-btn">
+                Submit Registration
+            </button>
+
+            <button type="reset" class="reset-btn">
+                Reset Form
+            </button>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <p>&copy; 2026 ISBAT University. All Rights Reserved.</p>
+
+        <p>Registration Number: YOUR REGISTRATION NUMBER</p>
+
+        <p>Contact: info@isbatuniversity.ac.ug</p>
+
+    </footer>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MTN Uganda - Home</title>
+
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <h2>MTN Uganda</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bundles.html">Bundles</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <img src="hero.jpg" alt="MTN Uganda connectivity">
+
+        <div class="hero-text">
+            Stay Connected, Uganda
+        </div>
+
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <main class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <!-- DATA BUNDLES CARD -->
+            <div class="card">
+
+                <h3>Data Bundles</h3>
+
+                <p>
+                    Enjoy affordable internet bundles
+                    to keep you connected wherever you go.
+                </p>
+
+                <a href="bundles.html">Learn More</a>
+
+            </div>
+
+            <!-- MOMO CARD -->
+            <div class="card">
+
+                <h3>MoMo</h3>
+
+                <p>
+                    Send and receive money easily
+                    using MTN Mobile Money services.
+                </p>
+
+                <a href="bundles.html">Learn More</a>
+
+            </div>
+
+            <!-- DEVICES CARD -->
+            <div class="card">
+
+                <h3>Devices</h3>
+
+                <p>
+                    Discover smartphones and devices
+                    that keep you connected.
+                </p>
+
+                <a href="bundles.html">Learn More</a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>&copy; 2026 MTN Uganda. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
+
+
